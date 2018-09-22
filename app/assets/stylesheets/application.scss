@@ -14,4 +14,68 @@
  */
 
 @import 'bootstrap';
-@import 'simple_discussion'
+@import 'simple_discussion';
+
+
+.navbar-brand {
+  font-family: 'Lobster', cursive !important;
+  font-weight: 400;
+  font-size: 18px;
+  // text-align: center;
+}
+
+ button.navbar-toggler {
+  border: none;
+}
+
+
+a.navbar-brand {
+  font-size: 18px;
+  text-align: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 314px;
+}
+
+.bg-info {
+  // background-color: rgba(231, 248, 245, 1);
+
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+ p.capitalize {
+  text-transform: uppercase;
+  color: rgba(88, 205, 207, 1);
+}
+
+.container_home_image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+#ip2 {
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+}
+
+ .user-icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+button.glyphicon-user, button.glyphicon-user {
+  display: inline;
+}
