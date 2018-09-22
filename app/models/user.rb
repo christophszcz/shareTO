@@ -8,6 +8,8 @@ class User < ApplicationRecord
                    :lng_column_name => :longitude
  	# for bcrypt
 	has_secure_password
+
+	attr_accessor :location
 	
 	def name 
 		return "#{first_name} #{last_name}"
