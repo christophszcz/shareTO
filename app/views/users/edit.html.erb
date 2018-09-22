@@ -1,0 +1,9 @@
+<%= form_for @user, url: user_update_path do |f| %>
+<div class="form-group">
+  <%= f.text_field :email, class: 'form-control', placeholder: 'email' %>
+</div>
+<div class="form-group">
+  <%= f.text_field :location, class: 'form-control', placeholder: 'location', id: "searchTextField" %>
+</div>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %> 

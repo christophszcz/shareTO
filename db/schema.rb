@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_22_175650) do
+ActiveRecord::Schema.define(version: 2018_09_22_185412) do
 
   create_table "events", force: :cascade do |t|
     t.string "name"
@@ -58,6 +58,19 @@ ActiveRecord::Schema.define(version: 2018_09_22_175650) do
     t.boolean "solved", default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.string "condition"
+    t.float "price"
+    t.text "description"
+    t.integer "user_id"
+    t.integer "location_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["location_id"], name: "index_items_on_location_id"
+    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "locations", force: :cascade do |t|
