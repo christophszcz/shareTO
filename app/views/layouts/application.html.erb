@@ -23,7 +23,11 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <% if !current_user %>
+          <%= link_to 'login', users_login_path, class: 'nav-link' %>
+        <% else %>
+          <%= link_to 'log out', users_logout_path, method: :delete, class: 'nav-link' %>
+        <% end %>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

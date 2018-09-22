@@ -6,5 +6,9 @@ Rails.application.routes.draw do
   get '/users/new' => 'users#new'
   post 'users/new/create' => 'users#create'
 
+  get '/users/login' => 'sessions#new'
+  post '/users/login/create' => 'sessions#create'
+  delete '/users/logout' => 'sessions#destroy'
+  
   mount SimpleDiscussion::Engine => "/forum"
 end
