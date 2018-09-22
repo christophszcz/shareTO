@@ -24,6 +24,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # for forum 
 gem 'simple_discussion'
+
+# for geocoding/and geolocation for finding shit near you.config file in config/initializers/geokit_config.rb
+gem 'geokit-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
