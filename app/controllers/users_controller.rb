@@ -8,7 +8,9 @@ class UsersController < ApplicationController
 		password = params[:user][:password]
 		password_confirmation = params[:user][:password_confirmation]
 		location = params[:user][:location]
-		user = User.new(email: email, password: password, password_confirmation: password_confirmation, moderator: false)
+		geo_location = Place.process_location(location)
+		user = User.new(email: email, password: password, password_confirmation: password_confirmation, moderator: false, latitude: geo_location[:lat], longitude: geo_location[:lng])
+		byebug
 		if user.save 
 			session[:user_id] = user.id
 			# here when a user signs up they should be given a page with a bunch of information instead of just being routed to the root path
