@@ -8,14 +8,36 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!--  FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- FOR USER ICON -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <%= link_to 'ToShare', root_path, class: 'navbar-brand' %>
+<!--  NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div class="navbar-container">
+    <a class="navbar-brand" href="#">ShareTO</a>
+
+    <div class=""></div>
+
+  </div>
+
+  <!--  USER ICON -->
+  <div class="user-icon">
+    <button class="glyphicon glyphicon-user"></button>
+  </div>
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -48,10 +70,25 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+
   </div>
 </nav>
+
+
   <body>
-    <%= yield %>
+    <!-- <%= yield %> -->
+
+     <div class="container_home_image">
+       <%= image_tag("undraw_work_chat_erdt.png", :alt => "home image") %>
+     </div>
+
+     <p class="capitalize">
+      log in
+     </p>
+
+     <button id="ip2"> Connect on Facebook </button>
+
+
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
