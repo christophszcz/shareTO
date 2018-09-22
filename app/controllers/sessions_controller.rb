@@ -9,9 +9,10 @@ class SessionsController < ApplicationController
 
 		user = User.find_by(email: email)
 		if user && user.authenticate(password)
+			byebug
 			session[:user_id] = user.id
 		else 
-			render 'errors/cannot_create_user'
+			render 'errors/cannot_login'
 		end
 	end
 
