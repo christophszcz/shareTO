@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_22_023648) do
+ActiveRecord::Schema.define(version: 2018_09_22_175650) do
+
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.boolean "active_status"
+    t.integer "location_id"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["location_id"], name: "index_events_on_location_id"
+  end
 
   create_table "forum_categories", force: :cascade do |t|
     t.string "name", null: false
@@ -49,6 +60,15 @@ ActiveRecord::Schema.define(version: 2018_09_22_023648) do
     t.datetime "updated_at"
   end
 
+  create_table "locations", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.boolean "moderator"
     t.string "first_name"
@@ -57,6 +77,18 @@ ActiveRecord::Schema.define(version: 2018_09_22_023648) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "latitude"
+    t.float "longitude"
+  end
+
+  create_table "visits", force: :cascade do |t|
+    t.boolean "active_status"
+    t.integer "user_id"
+    t.integer "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_visits_on_event_id"
+    t.index ["user_id"], name: "index_visits_on_user_id"
   end
 
 end
