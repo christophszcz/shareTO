@@ -1,0 +1,7 @@
+<%= form_for :item, url: user_new_item_path do |f| %> 
+	<%= f.text_field :name, class: 'form-control', placeholder: 'name of item' %>
+	<%= f.text_field :condition, class: 'form-control', placeholder: 'condition' %>
+	<%= f.text_field :price, class: 'form-control', placeholder: 'price' %>
+	<%= f.text_field :description, class: 'form-control', placeholder: 'description' %>
+	<%= f.submit class: 'btn btn-primary' %>
+<% end %> 
