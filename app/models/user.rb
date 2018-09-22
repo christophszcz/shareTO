@@ -8,7 +8,10 @@ class User < ApplicationRecord
                    :lng_column_name => :longitude
  	# for bcrypt
 	has_secure_password
-
+	validates_format_of :email,:with => /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/
+	validates :first_name, presence: true
+	validates :last_name, presence: true
+	validates :email, presence: true, uniqueness: true
 	attr_accessor :location
 	
 	def name 
