@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_22_023648) do
+ActiveRecord::Schema.define(version: 2018_09_22_141138) do
 
   create_table "forum_categories", force: :cascade do |t|
     t.string "name", null: false
@@ -57,6 +57,8 @@ ActiveRecord::Schema.define(version: 2018_09_22_023648) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "latitude"
+    t.float "longitude"
   end
 
 end
