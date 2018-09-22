@@ -59,7 +59,10 @@
           <%= link_to "Forum", simple_discussion_path, class: 'dropdown-item' %>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <% if current_user %>
+            <%= link_to 'Add Item for borrowing', users_enter_item_path(current_user.id), class: 'dropdown-item' %>
+            <%= link_to 'My Profile', user_edit_path(current_user.id), class: 'dropdown-item' %>
+          <% end %>
         </div>
       </li>
       <li class="nav-item">
@@ -76,19 +79,7 @@
 
 
   <body>
-    <!-- <%= yield %> -->
-
-     <div class="container_home_image">
-       <%= image_tag("undraw_work_chat_erdt.png", :alt => "home image") %>
-     </div>
-
-     <p class="capitalize">
-      log in
-     </p>
-
-     <button id="ip2"> Connect on Facebook </button>
-
-
+    <%= yield %>
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
