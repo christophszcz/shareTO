@@ -26,7 +26,7 @@
         <% if !current_user %>
           <%= link_to 'login', users_login_path, class: 'nav-link' %>
         <% else %>
-          <%= link_to 'log out', users_logout_path, method: :delete, class: 'nav-link' %>
+          <%= link_to 'Log out', users_logout_path, method: :delete, class: 'nav-link' %>
         <% end %>
       </li>
       <li class="nav-item dropdown">
@@ -41,7 +41,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="#">memes</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -50,7 +50,7 @@
     </form>
   </div>
 </nav>
-  <body>
+  <body class="container">
     <%= yield %>
   </body>
 
