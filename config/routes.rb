@@ -19,4 +19,10 @@ Rails.application.routes.draw do
   post 'users/:user_id/items/create' => 'items#create', as: 'user_new_item'
 
   mount SimpleDiscussion::Engine => "/forum"
+
+  namespace :api do
+    namespace :v1 do
+      resources :items, only: [:show]
+    end
+  end
 end
