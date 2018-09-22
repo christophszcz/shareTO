@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  moderator: false
+  first_name: MyString
+  last_name: MyString
+  password_digest: MyString
+  email: MyString
+
+two:
+  moderator: false
+  first_name: MyString
+  last_name: MyString
+  password_digest: MyString
+  email: MyString
