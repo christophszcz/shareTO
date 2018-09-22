@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+	has_many :items
+	has_many :visits
+	has_many :events, through: :visits
+
 	include SimpleDiscussion::ForumUser
 	# this is how we bind the user's location to the other locations in the app, geokit uses the following code
 	acts_as_mappable :default_units => :kms,
