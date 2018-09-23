@@ -11,6 +11,7 @@
 
     <!--  FONT -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
@@ -25,7 +26,7 @@
   </head>
 
 <!--  NAVIGATION BAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
+<nav class="navbar navbar-expand-lg navbar-light">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -60,7 +61,10 @@
           <%= link_to "Forum", simple_discussion_path, class: 'dropdown-item' %>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <% if current_user %>
+            <%= link_to 'Add Item for borrowing', users_enter_item_path(current_user.id), class: 'dropdown-item' %>
+            <%= link_to 'My Profile', user_edit_path(current_user.id), class: 'dropdown-item' %>
+          <% end %>
         </div>
       </li>
       <li class="nav-item">

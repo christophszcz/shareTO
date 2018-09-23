@@ -1,1 +1,21 @@
-hi
+<%= image_tag("main-image.png") %>
+
+<p class="save-text" >Save space, save money, build community.</p>
+
+<ul class="home-page-list">
+  <li>Rent items from your neighbours</li>
+  <li>List your unused items for neighbours to rent</li>
+</ul>
+
+<div class="button-container">
+  <% if !current_user %>
+    <%= link_to 'LOGIN', users_login_path, class: 'btn login-buttons' %>
+  <% else %>
+    <%= link_to 'LOG OUT', users_logout_path, method: :delete, class: 'btn login-buttons' %>
+  <% end %>
+  <%= link_to 'SIGN UP', users_new_path, class: 'btn login-buttons' %>
+</div>
+
+<div class="rectangle">
+</div>
+ 
