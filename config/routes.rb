@@ -13,10 +13,13 @@ Rails.application.routes.draw do
   get '/users/:user_id/edit' => 'users#edit', as: 'user_edit'
   patch '/users/:user_id/update' => 'users#update', as: 'user_update'
 
+  get '/users/introduction' => 'users#introduction', as: 'user_introduction'
   get 'users/:user_id/items' => 'items#index', as: 'users_items'
-  get 'users/:user_id/items/show/:item_id/' => 'items#show'
+  get 'users/:user_id/items/show/:id/' => 'items#show', as: 'item'
   get 'users/:user_id/items/new' => 'items#new', as: 'users_enter_item'
   post 'users/:user_id/items/create' => 'items#create', as: 'user_new_item'
+
+  get 'users/item/success' => 'items#success', as: 'item_success'
 
   mount SimpleDiscussion::Engine => "/forum"
 

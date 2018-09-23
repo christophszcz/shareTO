@@ -15,13 +15,23 @@
 @import 'bootstrap';
 @import 'simple_discussion';
 
+.main-logo{
+  width: 100px;
+  height: 40px;
+}
+
+.user-logo{
+  width: 24px;
+  height: 24px;
+}
+
 .navbar-brand {
   font-family: 'Lobster', cursive !important;
   font-weight: 400;
   font-size: 18px;
 }
 
- button.navbar-toggler {
+button.navbar-toggler {
   border: none;
 }
 
@@ -58,11 +68,11 @@ img {
 }
 
 #ip2 {
-    border-radius: 25px;
-    border: 2px solid #609;
-    padding: 20px;
-    width: 200px;
-    height: 15px;
+  border-radius: 25px;
+  border: 2px solid #609;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
 }
 
  .user-icon{
@@ -76,6 +86,7 @@ button.glyphicon-user, button.glyphicon-user {
 }
 
 /* Home Page */
+
 .save-text {
   font-size: 25px;
   text-align:center;
@@ -104,7 +115,7 @@ button.glyphicon-user, button.glyphicon-user {
   align-items: center;
 }
 
-.login-buttons{
+.blue-buttons{
   width: 279px;
   height: 50px;
   border-radius: 30px !important;
@@ -129,12 +140,13 @@ button.glyphicon-user, button.glyphicon-user {
   background-color: #eeeeee;
 }
 
+/* Introduction */
 
-
-
-
-
-
+.continue_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 
 .loginContainer {
   text-align: center;
@@ -142,7 +154,6 @@ button.glyphicon-user, button.glyphicon-user {
   margin-right: 32px;
   padding: 20px
 }
-
 
 img {
   width: 100%;
@@ -165,74 +176,63 @@ img {
   height: auto;
 }
 
-
-
 #fb_login {
-    border-radius: 30px;
-    border: 2px solid rgba(155, 155, 155, 1);
-    border-width: thin;
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+  border-radius: 30px;
+  border: 2px solid rgba(155, 155, 155, 1);
+  border-width: thin;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
 
-    padding-bottom: 47px;
-    padding-top: 3px;
+  padding-bottom: 47px;
+  padding-top: 3px;
+  margin-left: 5px;
 
-    // padding-right: 150px
-    margin-left: 5px;
-
-    width: 280px;
-    height: 12px;
-    position:relative;
+  width: 280px;
+  height: 12px;
+  position:relative;
 }
 
-
-
 .email_input {
-    width: 279px;
-    height: 50px;
-    border-radius: 30px;
-    border: solid 1px #9b9b9b;
-
+  width: 279px;
+  height: 50px;
+  border-radius: 30px;
+  border: solid 1px #9b9b9b;
 }
 
 .password_input {
-    width: 279px;
-    height: 50px;
-    border-radius: 30px;
-    border: solid 1px #9b9b9b;
+  width: 279px;
+  height: 50px;
+  border-radius: 30px;
+  border: solid 1px #9b9b9b;
 }
-
 
 .loginButtons {
   text-align: center;
-
 }
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px; /* Adjust the roundness of the FB Google icons*/
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    padding: 6px;
-
-    display: inline-flex;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px; /* Adjust the roundness of the FB Google icons*/
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  padding: 6px;
+  display: inline-flex;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #000 !important;
-    margin: 1em 0;
-    padding: 0;
-    width: 279px;
-    margin-left: 5px;
-    // background-color: black;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000 !important;
+  margin: 1em 0;
+  padding: 0;
+  width: 279px;
+  margin-left: 5px;
 }
 
 .fa-facebook {
@@ -243,6 +243,7 @@ hr {
 .fa-google {
   background: #dd4b39;
   color: white;
+  margin-left: 28px;
 }
 
 .input_field {
@@ -268,7 +269,6 @@ input.btn, input.btn-primary {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-
 }
 
 button.glyphicon-user, button.glyphicon-user {
@@ -310,9 +310,6 @@ button.glyphicon-user, button.glyphicon-user {
   padding-left: 20px;
 
 }
-
-
-
 
 .How-long-do-you-want {
   width: 279px;
@@ -420,6 +417,58 @@ span.perday {
 .Please-upload-a-pict {
   width: 279px;
   height: 50px;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Show Item */
+
+.item-image-container{
+  display: flex;
+  justify-content: center;
+}
+
+.vacuum-img{
+  width: 214px;
+  height: 214px;
+}
+
+.slider-container{
+  display: flex;
+  justify-content: center;
+}
+
+.slider{
+  width: 311px;
+  height: 47px;
+}
+
+.review-title{
+  width: 94px;
+  height: 30px;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #58cdcf;
+}
+
+.item-information-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-info{
+
   font-family: Raleway;
   font-size: 18px;
   font-weight: normal;
@@ -427,6 +476,7 @@ span.perday {
   font-stretch: normal;
   line-height: 1.39;
   letter-spacing: 0.1px;
+  text-align: center;
   color: #4a4a4a;
 }
 

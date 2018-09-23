@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
 	def new
-
 	end
 
 	def create
@@ -10,7 +9,7 @@ class SessionsController < ApplicationController
 		user = User.find_by(email: email)
 		if user && user.authenticate(password)
 			session[:user_id] = user.id
-			redirect_to root_path
+			redirect_to user_introduction_path
 		else 
 			render 'errors/cannot_login'
 		end
@@ -18,6 +17,9 @@ class SessionsController < ApplicationController
 
 	def destroy
 		user = User.find(session[:user_id])
-		if session[:user_id] then session[:user_id] = nil end 
+		if session[:user_id] 
+			then session[:user_id] = nil
+		end 
+		redirect_to root_path
 	end	
 end

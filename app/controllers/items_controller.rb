@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+
 	def index
 		user_id = params[:user_id].to_i
 		user = User.find(user_id)
@@ -9,6 +10,7 @@ class ItemsController < ApplicationController
 			render 'errors/you_have_no_items'
 		end
 	end
+
 	def new	
 		@item = Item.new
 	end
@@ -21,9 +23,14 @@ class ItemsController < ApplicationController
 		price = params[:item][:price].to_f
 		description = params[:item][:description]
 
-		item = user.items.new(name: item_name, condition: item_condition, description: description, price: price)
+		item = user.items.new(name: item_name, 
+			condition: item_condition, 
+			description: description, 
+			price: price)
+
 		if item.save
-			redirect_to users_items_path
+			redirect_to item_path(user_id: user_id, 
+				id: item.id)
 		else 
 			render 'errors/cannot_create_item'
 		end
@@ -33,7 +40,10 @@ class ItemsController < ApplicationController
 	def show
 		user_id = params[:user_id].to_i
 		user = User.find(user_id)
-		item_id = params[:item_id].to_i
+		item_id = params[:id]
 		@item = user.items.find(item_id)
+	end
+
+	def success
 	end
 end
