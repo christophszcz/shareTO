@@ -1,24 +1,18 @@
-# README
+# ShareTO
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## DESCRIPTION
 
-Things you may want to cover:
+ShareTO — a web app platform for neighbours in small spaces to borrow and/or rent items from each other that they don't use everyday. It aggregates data that can be shared to connect residents, communities and businesses together.
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+## SCREENSHOTS
 
-* Database creation
+### Review page
+![Review page](https://imgur.com/KiXtT5t.png)
 
-* Database initialization
+### Dashboard
+![Dashboard](https://imgur.com/qhYljDI.png)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### iPhone
+![iPhone](https://imgur.com/JaEzbTA.png)
