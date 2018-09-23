@@ -1,3 +1,31 @@
-<%= @item.name %>
-<%= @item.price %>
-<%= @item.condition %>
+<div class="slider-container">
+    <%= image_tag("slider_2.png", class: 'slider') %>
+</div>
+
+<div class="item-image-container">
+  <%= image_tag("vacuum.png", class: 'vacuum-img') %>
+</div>
+
+<div class="item-information-container">
+  <p class="review-title">
+    Review
+  </p>
+</div>
+
+<div class="item-information">
+  <p class="item-info">
+    <%= @item.name %>
+  </p>
+  <p class="item-info">
+    Rent for a few days
+  </p> 
+  <p class="item-info"> 
+    $ <%= @item.price %>.00 / day
+  </p>  
+</div>
+
+<div class="button-container"> 
+  <%= link_to 'CONFIRM', users_enter_item_path(current_user.id), class: 'btn blue-buttons' %>
+</div>
+
+
