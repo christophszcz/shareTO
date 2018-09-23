@@ -283,8 +283,62 @@ button.glyphicon-user, button.glyphicon-user {
   display: inline;
 }
 
-.continue-container{
+.button-container{
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+/* Show Item */
+
+.item-image-container{
+  display: flex;
+  justify-content: center;
+}
+
+.vacuum-img{
+  width: 214px;
+  height: 214px;
+}
+
+.slider-container{
+  display: flex;
+  justify-content: center;
+}
+
+.slider{
+  width: 311px;
+  height: 47px;
+}
+
+.review-title{
+  width: 94px;
+  height: 30px;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #58cdcf;
+}
+
+.item-information-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-info{
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #4a4a4a;
 }
