@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get 'users/:user_id/items/new' => 'items#new', as: 'users_enter_item'
   post 'users/:user_id/items/create' => 'items#create', as: 'user_new_item'
 
+  get 'users/item/success' => 'items#success', as: 'item_success'
+
   mount SimpleDiscussion::Engine => "/forum"
 
   namespace :api do
