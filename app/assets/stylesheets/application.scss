@@ -497,5 +497,26 @@ span.perday {
   letter-spacing: 0.1px;
   text-align: center;
   color: #58cdcf;
+}
 
+#search{
+  width: 279px;
+  height: 50px;
+  border-radius: 30px;
+  border: solid 1px #9b9b9b;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: 0.1px;
+  color: #4a4a4a;
+  margin-top: 13px;
+  margin-bottom: 26px;
+}
+
+#search-container{
+  display: flex;
+  justify-content: center;
 }
