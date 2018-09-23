@@ -22,14 +22,14 @@
 		</p>
 
 		<br>
-
+		
 		<div class="selectWrapper">
-			  <select class="selectBox">
-				<option>A few days</option>
-			  <option>Option 1</option>
-			  <option>Option 2</option>
-			  <option>Option 3</option>
-			  <option>Option 4</option>
+			<select class="selectBox">
+			  <option>A few days</option>
+			  <option>3 days</option>
+			  <option>5 days</option>
+			  <option>1 week</option>
+			  <option>1 + week(s)</option>
 			</select>
 		</div>
 
@@ -54,16 +54,11 @@
 
 		<!-- <%= f.text_field :price, class: 'form-control', placeholder: 'price' %>
 		<br /> -->
-
+		
 		<div class="selectWrapper">
-				<select class="selectBox2">
-				<option>$2 </option>
-				<option>$5</option>
-				<option>$10</option>
-				<option>$15</option>
-				<option>$20</option>
-			</select>
-		</div>
+			<%= f.select :price, [ ['$2', '2'], ['$5', '5'], ['$10', '10'], ['$15', '15'] , ['$20', '20'] ], prompt:'Select One', class:"selectBox2" %>
+		</div>	
+
 		<span class="perday"> /day</span>
 		<p class="suggested_price">
 			See suggested price

@@ -338,7 +338,7 @@ button.glyphicon-user, button.glyphicon-user {
   border:0px;
   outline:none;
   padding-left: 15px;
-  color: #cccccc;
+  color: #000;
   background-color: white;
 }
 
@@ -432,7 +432,7 @@ span.perday {
   justify-content: center;
 }
 
-.vacuum-img{
+.cooker-img{
   width: 214px;
   height: 214px;
 }
@@ -468,7 +468,6 @@ span.perday {
 }
 
 .item-info{
-
   font-family: Raleway;
   font-size: 18px;
   font-weight: normal;
@@ -478,6 +477,12 @@ span.perday {
   letter-spacing: 0.1px;
   text-align: center;
   color: #4a4a4a;
+}
+
+#item_price{
+  background: #fff;
+  height: 35px;
+  width: 147px;
 }
 
 .suggested_price {
