@@ -43,4 +43,7 @@ class ItemsController < ApplicationController
 		item_id = params[:id]
 		@item = user.items.find(item_id)
 	end
+
+	def success
+	end
 end

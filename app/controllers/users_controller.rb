@@ -9,7 +9,12 @@ class UsersController < ApplicationController
 		password_confirmation = params[:user][:password_confirmation]
 		location = params[:user][:location]
 		geo_location = Place.process_location(location)
-		user = User.new(email: email, password: password, password_confirmation: password_confirmation, moderator: false, latitude: geo_location[:lat], longitude: geo_location[:lng])
+		user = User.new(email: email, 
+			password: password, 
+			password_confirmation: password_confirmation, 
+			moderator: false, 
+			latitude: geo_location[:lat], 
+			longitude: geo_location[:lng])
 
 		if user.save 
 			session[:user_id] = user.id
@@ -32,7 +37,14 @@ class UsersController < ApplicationController
 		location = params[:user][:location]
 		geo_location = Place.process_location(location)
 
-		if user.update(email: email, latitude: geo_location[:lat], longitude: geo_location[:lng]) then redirect_to root_path else render 'errors/could_not_update_profile' end
+		if user.update(email: email, 
+			latitude: geo_location[:lat], 
+			longitude: geo_location[:lng]) 
+		
+			redirect_to root_path 
+		else 
+			render 'errors/could_not_update_profile' 
+		end
 	end
 
 	def introduction
