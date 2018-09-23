@@ -1,7 +1,89 @@
-<%= form_for :item, url: user_new_item_path do |f| %> 
-	<%= f.text_field :name, class: 'form-control', placeholder: 'name of item' %>
-	<%= f.text_field :condition, class: 'form-control', placeholder: 'condition' %>
-	<%= f.text_field :price, class: 'form-control', placeholder: 'price' %>
-	<%= f.text_field :description, class: 'form-control', placeholder: 'description' %>
-	<%= f.submit class: 'btn btn-primary' %>
-<% end %> 
+<!--  New Item Added -->
+
+<div class="newitem_container">
+
+    <%= image_tag("slider.png", :alt => "slider image") %>
+
+	<p class="What-items-are-you-l">
+		What items are you listing?
+	</p>
+	<br>
+
+	<%= form_for :item, url: user_new_item_path do |f| %>
+		<%= f.text_field :name, class: 'listing_input', placeholder: 'Instant' %>
+
+		<%= f.text_field :description, class: 'listing_input_1',  placeholder: 'Description' %>
+
+		<br>
+		<br>
+
+		<p class="How-long-do-you-want">
+			How long do you want to list the item for rent?
+		</p>
+
+		<br>
+
+		<div class="selectWrapper">
+			  <select class="selectBox">
+				<option>A few days</option>
+			  <option>Option 1</option>
+			  <option>Option 2</option>
+			  <option>Option 3</option>
+			  <option>Option 4</option>
+			</select>
+		</div>
+
+		<br>
+		<br />
+
+		<p class="Any-other-notes-to-t">
+			Any other notes to the renter?
+		</p>
+		<br />
+
+		<%= f.text_field :condition, class: 'item_condition', placeholder: 'Please clean the pot before returning. ' %>
+
+
+		<p class="words_max">
+			200 Words Max
+		</p>
+
+		<p class="How-much-would-you-l">
+			How much would you like to charge per day??
+		</p>
+
+		<!-- <%= f.text_field :price, class: 'form-control', placeholder: 'price' %>
+		<br /> -->
+
+		<div class="selectWrapper">
+				<select class="selectBox2">
+				<option>$2 </option>
+				<option>$5</option>
+				<option>$10</option>
+				<option>$15</option>
+				<option>$20</option>
+			</select>
+		</div>
+		<span class="perday"> /day</span>
+		<p class="suggested_price">
+			See suggested price
+		</p>
+
+
+		<!-- <%= f.text_field :description, class: 'form-control', placeholder: 'description' %> -->
+
+		<p class="Please-upload-a-pict">
+			Please upload a picture of your awesome item!
+		</p>
+
+		<%= image_tag("upload_image.png", :alt => "slider image") %>
+		<br>
+		<br>
+
+		<%= f.submit 'NEXT', class: 'btn btn-primary' %>
+		<br>
+		<br>
+		<br>
+	<% end %>
+
+</div>
