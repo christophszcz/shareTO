@@ -129,3 +129,149 @@ button.glyphicon-user, button.glyphicon-user {
   height: 230px;
   background-color: #eeeeee;
 }
+
+
+
+
+
+
+
+
+.loginContainer {
+  text-align: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 20px
+}
+
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+ p.capitalize {
+  text-transform: uppercase;
+  color: rgba(88, 205, 207, 1);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+}
+
+.container_home_image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+
+
+#fb_login {
+    border-radius: 30px;
+    border: 2px solid rgba(155, 155, 155, 1);
+    border-width: thin;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+
+    padding-bottom: 47px;
+    padding-top: 3px;
+
+    // padding-right: 150px
+    margin-left: 5px;
+
+    width: 280px;
+    height: 12px;
+    position:relative;
+}
+
+
+
+.email_input {
+    width: 279px;
+    height: 50px;
+    border-radius: 30px;
+    border: solid 1px #9b9b9b;
+
+}
+
+.password_input {
+    width: 279px;
+    height: 50px;
+    border-radius: 30px;
+    border: solid 1px #9b9b9b;
+}
+
+
+.loginButtons {
+  text-align: center;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px; /* Adjust the roundness of the FB Google icons*/
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    padding: 6px;
+
+    display: inline-flex;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000 !important;
+    margin: 1em 0;
+    padding: 0;
+    width: 279px;
+    margin-left: 5px;
+    // background-color: black;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.input_field {
+  width: 47px;
+  height: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: 0.1px;
+  color: #4a4a4a;
+  margin-left: 5px;
+}
+
+input.btn, input.btn-primary {
+  width: 279px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #58cdcf;
+  border-style: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+
+}
+
+button.glyphicon-user, button.glyphicon-user {
+  display: inline;
+}
