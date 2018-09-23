@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
 		user = User.find_by(email: email)
 		if user && user.authenticate(password)
 			session[:user_id] = user.id
-			redirect_to root_path
+			redirect_to user_introduction_path
 		else 
 			render 'errors/cannot_login'
 		end

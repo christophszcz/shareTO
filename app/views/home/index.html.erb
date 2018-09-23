@@ -9,11 +9,11 @@
 
 <div class="button-container">
   <% if !current_user %>
-    <%= link_to 'LOGIN', users_login_path, class: 'btn login-buttons' %>
+    <%= link_to 'LOGIN', users_login_path, class: 'btn blue-buttons' %>
   <% else %>
-    <%= link_to 'LOG OUT', users_logout_path, method: :delete, class: 'btn login-buttons' %>
+    <%= link_to 'LOG OUT', users_logout_path, method: :delete, class: 'btn blue-buttons' %>
   <% end %>
-  <%= link_to 'SIGN UP', users_new_path, class: 'btn login-buttons' %>
+  <%= link_to 'SIGN UP', users_new_path, class: 'btn blue-buttons' %>
 </div>
 
 <div class="rectangle">

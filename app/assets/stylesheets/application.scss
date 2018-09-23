@@ -21,7 +21,7 @@
   font-size: 18px;
 }
 
- button.navbar-toggler {
+button.navbar-toggler {
   border: none;
 }
 
@@ -58,11 +58,11 @@ img {
 }
 
 #ip2 {
-    border-radius: 25px;
-    border: 2px solid #609;
-    padding: 20px;
-    width: 200px;
-    height: 15px;
+  border-radius: 25px;
+  border: 2px solid #609;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
 }
 
  .user-icon{
@@ -104,7 +104,7 @@ button.glyphicon-user, button.glyphicon-user {
   align-items: center;
 }
 
-.login-buttons{
+.blue-buttons{
   width: 279px;
   height: 50px;
   border-radius: 30px !important;
@@ -127,6 +127,14 @@ button.glyphicon-user, button.glyphicon-user {
   width: 375px;
   height: 230px;
   background-color: #eeeeee;
+}
+
+/* Introduction */
+
+.continue_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 
@@ -273,4 +281,10 @@ input.btn, input.btn-primary {
 
 button.glyphicon-user, button.glyphicon-user {
   display: inline;
+}
+
+.continue-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
