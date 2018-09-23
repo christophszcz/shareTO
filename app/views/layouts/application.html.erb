@@ -32,16 +32,15 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="navbar-container">
-    <a class="navbar-brand" href="/">ShareTO</a>
-
+    <%= link_to image_tag("logo.png", class: "main-logo"), '/' %>
   </div>
 
   <!--  USER ICON -->
   <div class="user-icon">
     <% if current_user %>
-      <%= link_to '', user_edit_path(current_user.id), class: 'glyphicon glyphicon-user' %>
+      <%= link_to image_tag("user.png", class: "user-logo"), user_edit_path(current_user.id) %>
     <% else %>
-      <button class="glyphicon glyphicon-user"></button>
+      <%= image_tag("user.png", class: "user-logo") %>
     <% end %>
   </div>
 
