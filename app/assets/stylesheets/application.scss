@@ -10,7 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
-
  */
 
 @import 'bootstrap';
@@ -101,9 +100,9 @@ button.glyphicon-user, button.glyphicon-user {
   margin-left: 40px;
   display: flex;
   position: absolute;
-  flex-direction: column; 
-  justify-content: center;  
-  align-items: center; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-buttons{
@@ -130,5 +129,3 @@ button.glyphicon-user, button.glyphicon-user {
   height: 230px;
   background-color: #eeeeee;
 }
-
- 

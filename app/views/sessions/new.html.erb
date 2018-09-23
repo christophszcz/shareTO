@@ -1,9 +1,50 @@
-<%= form_for :session, url: users_login_create_path do |f| %>
-<div class="form-group">
-  <%= f.text_field :email, class: 'form-control', placeholder: 'email' %>
+<div class="loginContainer">
+
+  <div class="container_home_image">
+    <%= image_tag("undraw_work_chat_erdt.png", :alt => "home image") %>
+  </div>
+
+    <p class="capitalize">
+     log in
+    </p>
+
+  <div class="loginButtons">
+    <!--  FACEBOOK -->
+    <button id="fb_login"> Connect with Facebook <span class="fa fa-facebook"></span></button>
+    <br>
+    <br>
+    <!--  GOOGLE -->
+    <button id="fb_login"> Connect with Google <span class="fa fa-google"></span></button>
+  </div>
+
+  <hr/>
+
+  <p class="capitalize">
+    or
+  </p>
+
+  <%= form_for :session, url: users_login_create_path do |f| %>
+
+  <!--  EMAIL -->
+  <p class="input_field">
+    Email:
+  </p>
+  <div>
+    <%= f.text_field :email, class: 'email_input' %>
+  </div>
+  <br>
+
+  <!--  PASSWORD -->
+  <p class="input_field">
+    Password:
+  </p>
+  <div>
+    <%= f.password_field :password, class: 'password_input'%>
+  </div>
+    <br />
+    <br />
+    <%= f.submit 'LOG IN', class: 'btn btn-primary' %>
+
+  <% end %>
+
 </div>
-<div class="form-group">
-  <%= f.password_field :password, class: 'form-control', placeholder: 'password'%> 
-</div> 
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %> 
