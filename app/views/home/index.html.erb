@@ -1,4 +1,6 @@
-<%= image_tag("main-image.png") %>
+<div class="main-image-container">
+  <%= image_tag("main-image.png") %>
+</div>
 
 <p class="save-text">Save space, save money, build community.</p>
 
@@ -7,7 +9,8 @@
   <li>List your unused items for neighbours to rent</li>
 </ul>
 
-<div class="button-container">
+<div class="button-containe
+r">
   <% if !current_user %>
     <%= link_to 'LOGIN', users_login_path, class: 'btn blue-buttons' %>
   <% else %>

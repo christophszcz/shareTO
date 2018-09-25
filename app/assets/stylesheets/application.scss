@@ -14,41 +14,8 @@
 
 @import 'bootstrap';
 @import 'simple_discussion';
-
-.main-logo{
-  width: 100px;
-  height: 40px;
-}
-
-.user-logo{
-  width: 24px;
-  height: 24px;
-}
-
-.navbar-brand {
-  font-family: 'Lobster', cursive !important;
-  font-weight: 400;
-  font-size: 18px;
-}
-
-button.navbar-toggler {
-  border: none;
-}
-
-a.navbar-brand {
-  font-size: 18px;
-  text-align: center;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  width: 285px;
-}
-
-.navbar {
-  background-color: #E3F9F6 !important;
-}
+@import './home';
+@import './navbar';
 
 img {
   width: 100%;
