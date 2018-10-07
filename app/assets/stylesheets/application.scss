@@ -13,6 +13,7 @@
  */
 
 @import 'bootstrap';
+@import './colors';
 @import 'simple_discussion';
 @import './home';
 @import './navbar';
@@ -25,9 +26,9 @@ img {
   height: auto;
 }
 
- p.capitalize {
+p.capitalize {
   text-transform: uppercase;
-  color: rgba(88, 205, 207, 1);
+  color: $teal;
 }
 
 .container_home_image {
