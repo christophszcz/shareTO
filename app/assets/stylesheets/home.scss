@@ -2,6 +2,59 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.save-text {
+  font-size: 25px;
+  text-align:center;
+  color: #58cdcf;
+  font-family: 'Raleway', sans-serif;
+}
+
+.home-page-list{
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: 0.1px;
+  color: #4a4a4a;
+}
+
+.button-container{
+  margin-top: 50px;
+  margin-left: 40px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-buttons{
+  width: 279px;
+  height: 50px;
+  border-radius: 30px !important;
+  background-color: #58cdcf;
+  margin: 20px 0 20px 0;
+  font-family: Raleway;
+  font-size: 21px !important;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.rectangle {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+  width: 375px;
+  height: 230px;
+  background-color: #eeeeee;
+}
+
 @media (min-width: 600px){
   .main-image-container{
     display: flex;
