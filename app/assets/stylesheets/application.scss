@@ -17,6 +17,7 @@
 @import './home';
 @import './navbar';
 @import './introduction';
+@import './items';
 
 img {
   width: 100%;
@@ -51,100 +52,4 @@ img {
 
 button.glyphicon-user, button.glyphicon-user {
   display: inline;
-}
-
-/* Show Item */
-
-.item-image-container{
-  display: flex;
-  justify-content: center;
-}
-
-.cooker-img{
-  width: 214px;
-  height: 214px;
-}
-
-.slider-container{
-  display: flex;
-  justify-content: center;
-}
-
-.slider{
-  width: 311px;
-  height: 47px;
-}
-
-.review-title{
-  width: 94px;
-  height: 30px;
-  font-family: Raleway;
-  font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: 0.1px;
-  text-align: center;
-  color: #58cdcf;
-}
-
-.item-information-container{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.item-info{
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.39;
-  letter-spacing: 0.1px;
-  text-align: center;
-  color: #4a4a4a;
-}
-
-#item_price{
-  background: #fff;
-  height: 35px;
-  width: 147px;
-}
-
-.suggested_price {
-  width: 190px;
-  height: 22px;
-  font-family: Raleway;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: italic;
-  font-stretch: normal;
-  line-height: 1.83;
-  letter-spacing: 0.1px;
-  text-align: center;
-  color: #58cdcf;
-}
-
-#search{
-  width: 279px;
-  height: 50px;
-  border-radius: 30px;
-  border: solid 1px #9b9b9b;
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.39;
-  letter-spacing: 0.1px;
-  color: #4a4a4a;
-  margin-top: 13px;
-  margin-bottom: 26px;
-}
-
-#search-container{
-  display: flex;
-  justify-content: center;
 }
