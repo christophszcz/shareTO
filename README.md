@@ -6,9 +6,9 @@ ShareTO — a web app platform for neighbours in small spaces to borrow and/or r
 
 ## RESULTS
 
-Achieved Top 10 out of 80 teams
+Achieved Top 10 ranking out of 80 teams.
 
-![Elevate Ranking]()
+![Elevate Ranking](https://github.com/christophszcz/shareTO/blob/master/image/Top10.jpg?raw=true)
 
 ## SCREENSHOTS
 
